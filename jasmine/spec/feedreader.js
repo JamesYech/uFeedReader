@@ -62,7 +62,7 @@ $(function() {
 			beforeEach(function(done) {
 				$('.menu-icon-link').trigger('click');
 		 		setTimeout(done,400);
-		 	})
+		 	});
 
 			//test that the menu visibilty will toggle when the menu icon is clicked
 			it('menu toggled to visible when menu icon is clicked', function() {
@@ -115,7 +115,7 @@ $(function() {
    			curTitle=$('.feed').find('h2').first().text();
    			expect(initTitle).not.toBe(curTitle);
    			done();
-   		})
+   		});
 	});
 
 }());
